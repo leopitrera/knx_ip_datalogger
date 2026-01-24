@@ -1,0 +1,13 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+repositories { mavenCentral() }
+
+dependencies {
+  implementation 'io.calimero:calimero-core:3.0-M1'
+}
+
+mainClassName = 'KnxCliLogger'
+run {
+  standardInput = System.in
+}
